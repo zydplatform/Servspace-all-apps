@@ -5,7 +5,7 @@ public class Account {
     private String accountHolder;
     private double balance;
     private String password;
-}
+
 
 public Account(String accountHolder, String password){
     this.accountHolder =accountHolder;
@@ -38,5 +38,7 @@ public boolean withdraw(double amount){
 public boolean authenticate(String password){
 
     return this.password.equals(password);
+
+}
 
 }
